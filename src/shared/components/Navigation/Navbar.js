@@ -21,6 +21,7 @@ const Example = (props) => {
     localStorage.removeItem("user");
   };
 
+  // localStorage.setItem("auth", false);
   return (
     <div>
       {console.log("verf", verf)}
@@ -49,11 +50,11 @@ const Example = (props) => {
               </Link>
             ) : null}
 
-            {verf == "false" ? (
+            {/* {verf == "false" ? ( */}
               <NavLink to="/auth" exact>
                 <li class="nav-link">Authenticate</li>
               </NavLink>
-            ) : null}
+            {/* ) : null} */}
           </ul>
         </Collapse>
       </Navbar>
